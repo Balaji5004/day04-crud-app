@@ -10,12 +10,12 @@ function UpdateStudent({students,setStudents,edit}) {
     const[college, setCollege] = useState()
     const[place, setPlace] = useState()
 
-    // useEffect (() => {
-    //   setName(editstudent.name)
-    //   setQualification(editstudent.qualification)
-    //   setCollege(editstudent.college)
-    //   setPlace(editstudent.place)
-    // },[editstudent])
+    useEffect (() => {
+      setName(editstudent.name)
+      setQualification(editstudent.qualification)
+      setCollege(editstudent.college)
+      setPlace(editstudent.place)
+    },[editstudent])
 
     const updatestudent = () => {
         const upadateobject = {
